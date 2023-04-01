@@ -8,7 +8,8 @@ async function main() {
 
 	console.log('BoredKitty deployed to:', nftCollection.address)
 
-	nftCollection.mint(3)
+	const txn = await nftCollection.mint(5)
+	await txn.wait()
 	console.log('Mint completed')
 }
 

@@ -7,6 +7,8 @@
 // const hre = require('hardhat')
 const { FXRootContractAbi } = require('../contractABIs')
 
+// this was mainly experimental script
+
 // async function main() {
 // 	const NftCollection = await ethers.getContractFactory('NftCollection')
 // 	const nftCollection = await NftCollection.deploy()
@@ -29,8 +31,7 @@ async function main() {
 	//.............
 	//approve and deposit
 	const signer = await ethers.getSigner()
-	console.log(signer.address)
-	return
+
 	const nftCollection = await ethers.getContractAt(
 		'NftCollection',
 		'0x78a03ad89a42d54221e2f6068f91988c7fa4339a'

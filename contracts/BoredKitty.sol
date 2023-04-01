@@ -8,7 +8,7 @@ contract BoredKitty is ERC721A {
 
     string public baseURI = "https://gateway.pinata.cloud/ipfs/QmRgAJau17hYufsJKHqJkKwbvEiSnnPMJ1GqoKoUJNR9uY/";
 
-    constructor() ERC721A("mnist", "mnm") {}
+    constructor() ERC721A("BoredKitty", "BKT") {}
 
     function mint(uint256 quantity) external payable {
         // _safeMint's second argument now takes in a quantity, not a tokenId.
