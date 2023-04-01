@@ -14,16 +14,12 @@ npx hardhat run scripts/deploy.js
 
 There is secrets.js file as
 
-```
+```js
 module.exports = {
 	alchemyRPCs: {
-		goreli:
-			'<goreli_alchemy_url>',
-		mumbai:
-			'<mumbai_alchemy_url>',
+		goreli: '<goreli_alchemy_url>',
+		mumbai: '<mumbai_alchemy_url>',
 	},
-	accounts: [
-		privateKey
-	],
+	accounts: [privateKey],
 }
 ```
