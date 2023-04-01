@@ -11,3 +11,19 @@ REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat run scripts/deploy.js
 ```
+
+There is secrets.js file as
+
+```
+module.exports = {
+	alchemyRPCs: {
+		goreli:
+			'<goreli_alchemy_url>',
+		mumbai:
+			'<mumbai_alchemy_url>',
+	},
+	accounts: [
+		privateKey
+	],
+}
+```
